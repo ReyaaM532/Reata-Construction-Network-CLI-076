@@ -16,6 +16,34 @@
 
  # Prerequisites
   Cisco Packet Tracer
+  
+  Cisco Configuration
+
+Cisco Packet Tracer is used to simulate and test the proposed network.
+
+Basic Device Configuration
+
+Typical configurations include:
+
+enable
+configure terminal
+
+hostname COMPANY-RTR
+
+enable secret <password>
+
+service password-encryption
+
+banner motd #UNAUTHORISED ACCESS PROHIBITED#
+
+line console 0
+password <password>
+login
+
+line vty 0 4
+password <password>
+login
+transport input ssh
 
  # IP ADDRESING PLAN
   Addressing block: 192.168.0/24
