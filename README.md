@@ -1,3 +1,3 @@
 # Reata-Construction-Network-CLI-076
-A computer network for a construction company that addresses the client’s current networking problems and requirements.The completed network must permit successful data exchange between the appropriated nodes.  ACLs will be implemented to control and restrict traffic between departments and prevent unauthorised access to sensitive resources
+The purpose of this project is to design a computer network that handles ACLs (traffic filtering policy) of a construction company and allows for client change request of allowing one off-site administrator secure remote management access to network devices. In addition, the addressing plan must allow for a branch office that may be opened within 18 months. 
 
