@@ -65,7 +65,7 @@ The remaining address space from:
 
 is reserved for future expansion
 
-. Testing and Verification
+ 
 
 ## Connectivity Testing
  The network is tested in Cisco Packet Tracer to verify that the design meets the client's requirements.
