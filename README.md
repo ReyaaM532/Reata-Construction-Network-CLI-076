@@ -72,4 +72,8 @@ is reserved for future expansion
  The network is tested in Cisco Packet Tracer to verify that the design meets the client's requirements.
 
 Ping tests are performed between devices in the same VLAN.
+
+show vlan brief
+
+show ip interface brief
  
