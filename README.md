@@ -57,4 +57,18 @@ transport input ssh
 | 5th    | Engineering                      | `192.168.38.128/27` | `255.255.255.224` | `192.168.38.159`  | `192.168.38.130 – 192.168.38.158` | `192.168.38.129` |   50 |
 | 6th    | Health & Safety                  | `192.168.38.160/27` | `255.255.255.224` | `192.168.38.191`  | `192.168.38.162 – 192.168.38.190` | `192.168.38.161` |   60 |
 
+## Reserved Address Space
+
+The remaining address space from:
+
+192.168.38.192 – 192.168.38.255
+
+is reserved for future expansion
+
+. Testing and Verification
+
+## Connectivity Testing
+ The network is tested in Cisco Packet Tracer to verify that the design meets the client's requirements.
+
+Ping tests are performed between devices in the same VLAN.
  
