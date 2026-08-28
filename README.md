@@ -3,7 +3,9 @@
 
 # Client Background
  Client ID: CLI-076
+ 
  Organisation:Reata Construction Group (Potchefstroom)
+ 
  Industry: Construction
  Technical Challenge: ACLs (traffic filtering policy)
  Constraint: A branch office may be opened within 18 months
