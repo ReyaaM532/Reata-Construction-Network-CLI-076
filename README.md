@@ -76,4 +76,21 @@ Ping tests are performed between devices in the same VLAN.
 show vlan brief
 
 show ip interface brief
+
+
+## Security 
+
+
+
+Security Measures includes:
+
+VLAN segmentation
+
+Password protection
+
+Encrypted passwords
+
+SSH-based remote management
+
+Access Control Lists
  
