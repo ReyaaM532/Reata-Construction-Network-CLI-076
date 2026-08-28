@@ -7,8 +7,11 @@
  Organisation:Reata Construction Group (Potchefstroom)
  
  Industry: Construction
+ 
  Technical Challenge: ACLs (traffic filtering policy)
+ 
  Constraint: A branch office may be opened within 18 months
+ 
  Change Request: CR9: One off-site administrator requires secure remote management access to network devices
 
  # Prerequisites
