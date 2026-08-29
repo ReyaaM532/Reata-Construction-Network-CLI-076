@@ -97,15 +97,15 @@ Access Control Lists
 
  ## Project Structure
 
- Ip-addressing 
+ -Ip-addressing 
 
- Configurations
+ -Configurations
 
- Diagrams
+ -Diagrams
 
- Packet Tracer
+ -Packet Tracer
 
- Screenshots
+ -Screenshots
 
- Documentation
+ -Documentation
  
