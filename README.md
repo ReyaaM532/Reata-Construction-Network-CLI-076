@@ -18,7 +18,7 @@
   Cisco Packet Tracer
   
 
-Cisco Packet Tracer is used to simulate and test the proposed network.
+
 
 Typical configurations include:
 
