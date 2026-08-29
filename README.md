@@ -93,4 +93,19 @@ Encrypted passwords
 SSH-based remote management
 
 Access Control Lists
+
+
+ ## Project Structure
+
+ Ip-addressing 
+
+ Configurations
+
+ Diagrams
+
+ Packet Tracer
+
+ Screenshots
+
+ Documentation
  
