@@ -24,16 +24,14 @@ The network is designed, configured, and tested using **Cisco Packet Tracer**, w
 
 ## Network Design
 
-  VLANS separate the different organisation departments and the Guest network.
-
   The network components are:
 
-  - **Cloud PT:** Represents the Internet connection.
-  - **Cisco 3560 Multilayer 3 Switch:** Provides inter-VLAN routing, VLAN gateways, ACL implementation, and network management.
-  - **Cisco 2960 Access Switch:** Provides layer 2 connectivity for end devices.
-  - **Router 2911:** Provides connectivity between the internal network and the external network.
-  - **Guest Wireless Access Point:** Provides wireless connectivity for visitors through Guest VLAN.
-  - **End Devices:** PCs, printers, and email server are connected to appropriate vlans.
+  - **Cloud PT**
+  - **Cisco 3560 Multilayer 3 Switch** 
+  - **Cisco 2960 Access Switch**
+  - **Router 2911**
+  - **Guest Wireless Access Point**
+  - **End Devices**
 
 
 ## IP Addressing Plan
@@ -174,17 +172,5 @@ Detailed testing results and supporting screenshots.
 
 Configuration and connectivity issues encountered during implementation were investigated and resolved. Detailed troubleshooting steps and supporting evidence are provided in the `Troubleshooting/` folder.
 
- ## Project Structure
-
- -Ip-addressing 
-
- -Configurations
-
- -Diagrams
-
- -Packet Tracer
-
- -Screenshots
-
- -Documentation
+ 
  
