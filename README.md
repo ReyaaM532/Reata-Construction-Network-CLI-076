@@ -10,6 +10,24 @@ The IP addressing plan also reserves address space to support the constraint tha
 
 The network is designed, configured, and tested using **Cisco Packet Tracer**, with supporting evidence covering the client requirements, network design, IP addressing, topology, configuration, testing, troubleshooting, and project reflection.
 
+## Project Structure
+
+```text
+ReatCont/
+├── Client Requirements/
+│   └── Client requirements documentation and evidence
+├── IP ADDRESSING/
+│   └── IP addressing plan and supporting evidence
+├── Packet Tracer/
+│   └── Reata Construction Group . CLI-076.pkt
+├── Testing/
+│   └── Network testing results and screenshots
+├── Topology/
+│   └── Network topology screenshots and documentation
+├── Troubleshooting/
+│   └── Troubleshooting documentation and evidence
+
+
 # Client Background and Requirements
 
 - **Client ID:** CLI-076
