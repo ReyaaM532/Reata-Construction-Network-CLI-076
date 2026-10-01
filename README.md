@@ -172,5 +172,15 @@ Detailed testing results and supporting screenshots.
 
 Configuration and connectivity issues encountered during implementation were investigated and resolved. Detailed troubleshooting steps and supporting evidence are provided in the `Troubleshooting/` folder.
 
- 
+ ## Default Test Credentials
+
+To test safe SSH remote management, the administrator account listed below was utilized.
+
+| Credential | Value |
+|------------|-------|
+| Username | `admin` |
+| Privilege Level | 15 |
+| Access Method | SSH |
+
+
  
