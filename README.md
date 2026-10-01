@@ -1,21 +1,28 @@
-# Reata-Construction-Network-CLI-076
- This project present a computer network that handles ACLs (traffic filtering policy) of a Reata Construction Group and allows for client change request of allowing one off-site administrator secure remote management access to network devices. In addition, the addressing plan allow's for a branch office that may be opened within 18 months. The network will be designed and tested in Cisco Packet Tracer
+# Reata Construction Group Network - CLI-076
+
+## Project Overview
+
+    This Computer network designed for **Reata Construction Group**, focus on network segmentation, access control, and secure remote mangement.
+
+    The network implements **Access Control Lists** which was the technical challenge and also addresses the client's change request requiring **one off-site administrator to have secure remote management access to network devices**
+
+    The IP addressing plan also reserves address space to support a constraint of a **branch office that may be opened within 18 months**, allowing the network to accommodate future expansion.
+
+    The network is designed,configured, and tested using **Cisco Packet Tracer**, with evidence including client requirements, network design, IP addressing, topology, configuration, testing, troubleshooting, and project reflection.
 
 # Client Background
- Client ID: CLI-076
- 
- Organisation:Reata Construction Group (Potchefstroom)
- 
- Industry: Construction
- 
- Technical Challenge: ACLs (traffic filtering policy)
- 
- Constraint: A branch office may be opened within 18 months
- 
- Change Request: CR9: One off-site administrator requires secure remote management access to network devices
 
- # Prerequisites
-  Cisco Packet Tracer
+- **Client ID:** CLI-076
+- **Organisation:** Reata Construction Group (Potchefstroom)
+- **Industry:** Construction
+- **Assigned Addressing Block:** `192.168.38.0/24`
+- **Technical Challenge:** ACLs (traffic filtering policy)
+- **Constraint:** A branch office may be opened within 18 months.
+- **Change Request – CR9:** One off-site administrator requires secure remote management access to network devices.
+
+
+
+ 
   
 
 
