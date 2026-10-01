@@ -105,7 +105,24 @@ The departmental access ports were configured according to the VLAN requirements
 The link between the multilayer switch and the router is configured as a **802.1Q trunk**.
 
 
+## Access Control List (ACL) Configuration
 
+An Extended Access Control List (ACL) was implemented to restrict Guest Wi-Fi users from accessing Sensitive departments.
+
+The Guest Wi-Fi network uses **VLAN 70** with the subnet `192.168.38.192/27`. The ACL is applied inbound on the VLAN 70 interface of the multilayer switch.
+
+The ACL denies traffic from the Guest Wi-Fi network to the following internal departmental VLANs:
+
+- Management – `192.168.38.0/27`
+- HR – `192.168.38.32/27`
+- Finance – `192.168.38.64/27`
+- Procurement – `192.168.38.96/27`
+- Engineering – `192.168.38.128/27`
+- Health & Safety – `192.168.38.160/27`
+
+Traffic from the Guest Wi-Fi network to other destinations is permitted.
+
+This ACL(which is a technical challenge) configuration provides network segmentation and prevents guest users from accessing internal departmental resources while still allowing Guest Wi-Fi connectivity to external networks.
 
  ## Project Structure
 
