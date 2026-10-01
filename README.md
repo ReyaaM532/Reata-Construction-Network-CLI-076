@@ -12,7 +12,7 @@ The network is designed, configured, and tested using **Cisco Packet Tracer**, w
 
 ## Project Structure
 
-```text
+
 ReatCont/
 ├── Client Requirements/
 │   └── Client requirements documentation and evidence
