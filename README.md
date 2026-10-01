@@ -124,6 +124,26 @@ Traffic from the Guest Wi-Fi network to other destinations is permitted.
 
 This ACL(which is a technical challenge) configuration provides network segmentation and prevents guest users from accessing internal departmental resources while still allowing Guest Wi-Fi connectivity to external networks.
 
+
+## DHCP Configuration
+
+DHCP was configured on the 3560 multilayer switch to assign IP addresses to devices connected to the Guest Wi-Fi network.
+
+The Guest Wi-Fi network uses **VLAN 70** and the `192.168.38.192/27` subnet.
+
+### Guest DHCP Configuration
+
+| Parameter | Configuration |
+|-----------|---------------|
+| DHCP Pool | `GUEST` |
+| Network | `192.168.38.192/27` |
+| Default Gateway | `192.168.38.193` |
+| DNS Server | `8.8.8.8` |
+| Excluded Address | `192.168.38.193` |
+
+DHCP allows Guest Wi-Fi devices to obtain the required IP configuration without manual addressing.
+
+
  ## Project Structure
 
  -Ip-addressing 
