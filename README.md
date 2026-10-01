@@ -59,32 +59,50 @@ The address range `192.168.38.224/27` (`192.168.38.224 – 192.168.38.255`) is r
 This reserved address space supports the client requirement that a branch office may be opened within 18 months.
 
  
+## VLAN Configuration
 
-## Connectivity Testing
- The network is tested in Cisco Packet Tracer to verify that the design meets the client's requirements.
+VLANs were implemented to logically separate the departments and Guest Wi-Fi network. Each VLAN is associated with a dedicated `/27` subnet from the assigned `192.168.38.0/24` addressing block.
 
-Ping tests are performed between devices in the same VLAN.
+| VLAN | Name | Purpose |
+|------|------|---------|
+| 10 | Management | Management department |
+| 20 | HR | Human Resources |
+| 30 | Finance | Finance department |
+| 40 | Procurement | Procurement department |
+| 50 | Engineering | Engineering department |
+| 60 | Health & Safety | Health and Safety department |
+| 70 | Guest Wi-Fi | Guest and visitor wireless access |
 
-show vlan brief
+### VLAN Gateway Configuration
 
-show ip interface brief
+The default gateway for each VLAN is configured on the Layer 3.
 
+| VLAN | Default Gateway |
+|------|-----------------|
+| 10 | `192.168.38.1` |
+| 20 | `192.168.38.33` |
+| 30 | `192.168.38.65` |
+| 40 | `192.168.38.97` |
+| 50 | `192.168.38.129` |
+| 60 | `192.168.38.161` |
+| 70 | `192.168.38.193` |
 
-## Security 
+### Access Port Allocation
 
+The departmental access ports were configured according to the VLAN requirements:
 
+| Switch Port | VLAN | Network |
+|-------------|------|---------|
+| Fa0/1 | 70 | Guest Wi-Fi |
+| Fa0/2 | 10 | Management |
+| Fa0/3 | 20 | HR |
+| Fa0/4 | 30 | Finance |
+| Fa0/5 | 40 | Procurement |
+| Fa0/6 | 50 | Engineering |
+| Fa0/7 | 60 | Health & Safety |
 
-Security Measures includes:
+The link between the multilayer switch and the router is configured as a **802.1Q trunk**.
 
-VLAN segmentation
-
-Password protection
-
-Encrypted passwords
-
-SSH-based remote management
-
-Access Control Lists
 
 
  ## Project Structure
