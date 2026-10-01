@@ -1,6 +1,6 @@
 # Network Testing
 
-Testing was conducted in Cisco Packet Tracer to verify DHCP address allocation and connectivity between departmental PCs and their respective VLAN gateways.
+Testing was conducted in Cisco Packet Tracer to verify DHCP address allocation, VLAN gateway connectivity, Guest Wi-Fi access restrictions, and remote management access.
 
 ## Departmental DHCP and Connectivity Testing
 
@@ -39,16 +39,41 @@ The Guest DHCP configuration was verified as:
 - Default gateway: `192.168.38.193`
 - DNS server: `8.8.8.8`
 
-The Guest laptop initially failed to obtain an IP address because the Guest ACL did not permit DHCP client requests. After adding the DHCP permit statement to the ACL, the laptop successfully obtained an IP address from the Guest subnet.
+The Guest laptop initially failed to obtain an IP address because the Guest ACL did not explicitly permit DHCP client requests. After adding the DHCP permit statement to the ACL, the laptop successfully obtained an IP address from the Guest subnet.
 
 ### Guest DHCP Evidence
 
 - `01_Guest_DHCP_Failure.png` — Initial DHCP failure and APIPA address.
 - `02_Guest_DHCP_Success.png` — Successful DHCP address allocation after the ACL correction.
 
+## Guest Wi-Fi ACL Testing
+
+The Guest Wi-Fi ACL was tested to verify that Guest devices could reach their own VLAN gateway while being prevented from accessing internal departmental VLANs.
+
+The Guest laptop successfully reached its own gateway:
+
+`192.168.38.193`
+
+The Guest laptop was unable to reach the internal departmental VLAN gateways:
+
+- `192.168.38.1` — Management
+- `192.168.38.33` — HR
+- `192.168.38.65` — Finance
+- `192.168.38.97` — Procurement
+- `192.168.38.129` — Engineering
+- `192.168.38.161` — Health & Safety
+
+### Guest ACL Evidence
+
+The following screenshots provide evidence of the Guest Wi-Fi ACL testing:
+
+- `03_Guest_ACL_Management_Block.png` — Guest laptop was prevented from accessing the Management VLAN gateway.
+- `04_Guest_ACL_HR_Finance_Block.png` — Guest laptop was prevented from accessing the HR and Finance VLAN gateways.
+- `05_Guest_ACL_Procurement_Engineering_Block.png` — Guest laptop was prevented from accessing the Procurement and Engineering VLAN gateways.
+- `06_Guest_ACL_Gateway_Access.png` — Guest laptop successfully reached its own Guest VLAN gateway.
+
 ## Testing Still to Be Completed
 
-The following network functions will be tested and documented separately:
+The following network function will be tested and documented separately:
 
-- Guest Wi-Fi ACL restrictions
 - SSH remote management
