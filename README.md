@@ -183,7 +183,7 @@ The multilayer switch was configured with:
 
 Network testing was conducted in Cisco Packet Tracer to verify connectivity, VLAN segmentation, DHCP, ACL restrictions, and secure remote management.
 
-Detailed testing results and supporting screenshots.
+Detailed testing results and supporting screenshots are provided in the `Testing/` folder.
 
 
 ## Troubleshooting
