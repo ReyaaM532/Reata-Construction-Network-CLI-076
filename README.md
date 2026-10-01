@@ -144,6 +144,25 @@ The Guest Wi-Fi network uses **VLAN 70** and the `192.168.38.192/27` subnet.
 DHCP allows Guest Wi-Fi devices to obtain the required IP configuration without manual addressing.
 
 
+## Secure Remote Management – SSH
+
+Secure remote management was implemented using **SSH (Secure Shell)** on the Cisco 3560 multilayer switch.
+
+SSH provides an encrypted method for remotely managing network devices and is more secure than Telnet.
+
+### SSH Configuration
+
+The multilayer switch was configured with:
+
+- A hostname for the network device
+- A domain name
+- A local administrator account
+- RSA cryptographic keys
+- SSH version 2
+- Local authentication on the VTY lines
+- SSH as the only permitted remote access protocol
+
+
  ## Project Structure
 
  -Ip-addressing 
