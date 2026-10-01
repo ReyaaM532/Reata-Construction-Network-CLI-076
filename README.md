@@ -52,14 +52,11 @@ Each `/27` subnet provides **32 total addresses**, including **30 usable host ad
 | 70 | Guest Wi-Fi | `192.168.38.192/27` | `192.168.38.193` | `192.168.38.194 – 192.168.38.222` | `192.168.38.223` |
 
 
-
 ## Reserved Address Space
 
-The remaining address space from:
+The address range `192.168.38.224/27` (`192.168.38.224 – 192.168.38.255`) is reserved for future expansion.
 
-192.168.38.192 – 192.168.38.255
-
-is reserved for future expansion
+This reserved address space supports the client requirement that a branch office may be opened within 18 months.
 
  
 
