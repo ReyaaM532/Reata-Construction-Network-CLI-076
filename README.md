@@ -22,35 +22,17 @@ The network is designed, configured, and tested using **Cisco Packet Tracer**, w
 
 
 
- 
+## Network Design
+
+  VLANS separate the different organisation departments and the Guest network.
   
+  The network components are:
 
-
-
-Typical configurations include:
-
-enable
-configure t
-
-hostname COMPANY-RTR
-
-enable secret <password>
-
-service password-encryption
-
-banner motd #UNAUTHORISED ACCESS PROHIBITED#
-
-line console 0
-password <password>
-login
-
-line vty 0 4
-password <password>
-login
-transport input ssh
-
- ## IP ADDRESING PLAN and VLAN Configuration
-  Addressing block: 192.168.0/24
+  - **Cisco 3560 Multilayer 3 Switch:** Provides inter-VLAN routing, VLAN gateways, ACL implementation, and network management.
+  - **Cisco 2960 Access Switch:** Provides layer 2 connectivity for end devices.
+  - **Router 2911:** Provides connectivity between the internal network and the external network.
+  - **Guest Wireless Access Point:** Provides wireless connectivity for visitors through Guest VLAN.
+  - **End Devices:** PCs, printers, and email server are connected to appropriate vlans.
 
 
   
