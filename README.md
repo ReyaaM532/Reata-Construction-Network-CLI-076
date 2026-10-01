@@ -169,6 +169,11 @@ Network testing was conducted in Cisco Packet Tracer to verify connectivity, VLA
 
 Detailed testing results and supporting screenshots.
 
+
+## Troubleshooting
+
+Configuration and connectivity issues encountered during implementation were investigated and resolved. Detailed troubleshooting steps and supporting evidence are provided in the `Troubleshooting/` folder.
+
  ## Project Structure
 
  -Ip-addressing 
