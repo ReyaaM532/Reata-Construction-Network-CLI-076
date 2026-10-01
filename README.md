@@ -92,7 +92,6 @@ VLANs were implemented to logically separate the departments and Guest Wi-Fi net
 
 ### VLAN Gateway Configuration
 
-The default gateway for each VLAN is configured on the Layer 3.
 
 | VLAN | Default Gateway |
 |------|-----------------|
@@ -118,12 +117,10 @@ The departmental access ports were configured according to the VLAN requirements
 | Fa0/6 | 50 | Engineering |
 | Fa0/7 | 60 | Health & Safety |
 
-The link between the multilayer switch and the router is configured as a **802.1Q trunk**.
+
 
 
 ## Access Control List (ACL) Configuration
-
-An Extended Access Control List (ACL) was implemented to restrict Guest Wi-Fi users from accessing Sensitive departments.
 
 The Guest Wi-Fi network uses **VLAN 70** with the subnet `192.168.38.192/27`. The ACL is applied inbound on the VLAN 70 interface of the multilayer switch.
 
@@ -138,7 +135,7 @@ The ACL denies traffic from the Guest Wi-Fi network to the following internal de
 
 Traffic from the Guest Wi-Fi network to other destinations is permitted.
 
-This ACL(which is a technical challenge) configuration provides network segmentation and prevents guest users from accessing internal departmental resources while still allowing Guest Wi-Fi connectivity to external networks.
+
 
 
 ## DHCP Configuration
