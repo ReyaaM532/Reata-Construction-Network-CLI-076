@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-    This Computer network designed for **Reata Construction Group**, focus on network segmentation, access control, and secure remote mangement.
+This computer network is designed for **Reata Construction Group**, with a focus on network segmentation, access control, and secure remote management.
 
-    The network implements **Access Control Lists** which was the technical challenge and also addresses the client's change request requiring **one off-site administrator to have secure remote management access to network devices**
+The network implements **Access Control Lists (ACLs)** as the technical challenge and also addresses the client's change request requiring **one off-site administrator to have secure remote management access to network devices**.
 
-    The IP addressing plan also reserves address space to support a constraint of a **branch office that may be opened within 18 months**, allowing the network to accommodate future expansion.
+The IP addressing plan also reserves address space to support the constraint that a **branch office may be opened within 18 months**, allowing the network to accommodate future expansion.
 
-    The network is designed,configured, and tested using **Cisco Packet Tracer**, with evidence including client requirements, network design, IP addressing, topology, configuration, testing, troubleshooting, and project reflection.
+The network is designed, configured, and tested using **Cisco Packet Tracer**, with supporting evidence covering the client requirements, network design, IP addressing, topology, configuration, testing, troubleshooting, and project reflection.
 
-# Client Background
+# Client Background and Requirements
 
 - **Client ID:** CLI-076
 - **Organisation:** Reata Construction Group (Potchefstroom)
