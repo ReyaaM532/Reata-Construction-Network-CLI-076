@@ -163,6 +163,12 @@ The multilayer switch was configured with:
 - SSH as the only permitted remote access protocol
 
 
+## Testing and Evidence
+
+Network testing was conducted in Cisco Packet Tracer to verify connectivity, VLAN segmentation, DHCP, ACL restrictions, and secure remote management.
+
+Detailed testing results and supporting screenshots.
+
  ## Project Structure
 
  -Ip-addressing 
