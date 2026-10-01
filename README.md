@@ -28,6 +28,7 @@ The network is designed, configured, and tested using **Cisco Packet Tracer**, w
 
   The network components are:
 
+  - **Cloud PT:** Represents the Internet connection.
   - **Cisco 3560 Multilayer 3 Switch:** Provides inter-VLAN routing, VLAN gateways, ACL implementation, and network management.
   - **Cisco 2960 Access Switch:** Provides layer 2 connectivity for end devices.
   - **Router 2911:** Provides connectivity between the internal network and the external network.
@@ -102,6 +103,7 @@ The departmental access ports were configured according to the VLAN requirements
 | Fa0/7 | 60 | Health & Safety |
 
 The link between the multilayer switch and the router is configured as a **802.1Q trunk**.
+
 
 
 
