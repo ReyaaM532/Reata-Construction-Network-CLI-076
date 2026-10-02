@@ -10,6 +10,13 @@ The IP addressing plan also reserves address space to support the constraint tha
 
 The network is designed, configured, and tested using **Cisco Packet Tracer**, with supporting evidence covering the client requirements, network design, IP addressing, topology, configuration, testing, troubleshooting, and project reflection.
 
+
+## Tools Used
+
+- Cisco Packet Tracer
+- Visual Studio Code
+- Git Bash
+
 ## Project Structure
 
 ```
