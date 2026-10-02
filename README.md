@@ -17,7 +17,7 @@ ReatCont/
 ├── Client Requirements/
 │   └── Client requirements documentation 
 ├── IP ADDRESSING/
-│   └── IP addressing plan and supporting evidence
+│   └── IP addressing plan 
 ├── Packet Tracer/
 │   └── Reata Construction Group . CLI-076.pkt
 ├── Testing/
