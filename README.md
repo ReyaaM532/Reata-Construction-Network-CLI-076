@@ -15,7 +15,7 @@ The network is designed, configured, and tested using **Cisco Packet Tracer**, w
 ```
 ReatCont/
 ├── Client Requirements/
-│   └── Client requirements documentation and evidence
+│   └── Client requirements documentation 
 ├── IP ADDRESSING/
 │   └── IP addressing plan and supporting evidence
 ├── Packet Tracer/
