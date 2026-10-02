@@ -1,6 +1,6 @@
 # Network Testing
 
-Testing was conducted in Cisco Packet Tracer to verify DHCP address allocation, VLAN gateway connectivity, Guest Wi-Fi access restrictions, and remote management access.
+Testing was conducted in Cisco Packet Tracer to verify DHCP address allocation, VLAN gateway connectivity, Guest Wi-Fi access restrictions, and SSH remote management access.
 
 ## Departmental DHCP and Connectivity Testing
 
@@ -43,8 +43,8 @@ The Guest laptop initially failed to obtain an IP address because the Guest ACL 
 
 ### Guest DHCP Evidence
 
-- `01_Guest_DHCP_Failure.png` — Initial DHCP failure and APIPA address.
-- `02_Guest_DHCP_Success.png` — Successful DHCP address allocation after the ACL correction.
+- `GuestLaptop_DHCP_Failure.png` — Initial DHCP failure and APIPA address.
+- `GuestLaptop_DHCP_Success.png` — Successful DHCP address allocation after the ACL correction.
 
 ## Guest Wi-Fi ACL Testing
 
@@ -65,15 +65,27 @@ The Guest laptop was unable to reach the internal departmental VLAN gateways:
 
 ### Guest ACL Evidence
 
-The following screenshots provide evidence of the Guest Wi-Fi ACL testing:
-
 - `03_Guest_ACL_Management_Block.png` — Guest laptop was prevented from accessing the Management VLAN gateway.
 - `04_Guest_ACL_HR_Finance_Block.png` — Guest laptop was prevented from accessing the HR and Finance VLAN gateways.
 - `05_Guest_ACL_Procurement_Engineering_Block.png` — Guest laptop was prevented from accessing the Procurement and Engineering VLAN gateways.
 - `06_Guest_ACL_Gateway_Access.png` — Guest laptop successfully reached its own Guest VLAN gateway.
 
-## Testing Still to Be Completed
+## SSH Remote Management Testing
 
-The following network function will be tested and documented separately:
+SSH remote management was tested from the Management PC on VLAN 10 to the Cisco 3560 multilayer switch.
 
-- SSH remote management
+The Management PC successfully reached the switch gateway at:
+
+`192.168.38.1`
+
+SSH access was then tested using:
+
+```text
+ssh -l admin 192.168.38.1
+```
+
+The login was successful and provided access to the switch CLI.
+
+### SSH Evidence
+
+- `SSH_Testing_Management.png` — Successful SSH login from the Management PC to the Cisco 3560 multilayer switch.
